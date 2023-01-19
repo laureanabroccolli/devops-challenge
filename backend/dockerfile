@@ -1,0 +1,22 @@
+##Elijo un sistema operativo linux con python instalado
+FROM python:3.8
+
+##Carpeta para poner nuestra app
+WORKDIR /deployment
+
+##Hacer una copia de todas las carpetas
+COPY . .
+
+##Crear secret key
+ENV SECRET_KEY lau1059
+
+##ejecuto este comando para ejecutar e instalar todos los paquetes
+RUN pip3 install -r requirement.txt
+RUN pip3 install psycopg2
+RUN pip3 install psycopg2-binary
+
+##puerto para que corra la app  
+EXPOSE 8000  
+
+##Ejecuto el comando final, agrego 0.0.0.0:8000 para que nuestra app este disponible externamente osea visible externamente fuera del contenedor
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
