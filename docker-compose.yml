@@ -1,4 +1,4 @@
-# Version de Docker-compose
+## Version de Docker-compose
 version: '2.15.1'
 
 services:
@@ -7,7 +7,7 @@ services:
     build:      
       context: ./frontend
       dockerfile: Dockerfile
-    image: "reactjs-app-test-1"
+    image: "reactjs-1"
     container_name: container-frontend
     ##Establecer los puertos que expondremos al exterior a que puerto de nuestra maquina se vinculara 
     ports:
@@ -19,7 +19,7 @@ services:
     build:      
       context: ./backend
       dockerfile: Dockerfile
-    image: "django-app-test-1"
+    image: "django-1"
     container_name: container-backend      
     ports:
       - "8080:8000"
