@@ -1,3 +1,5 @@
+version: 2
+
 ## Nombre
 name: Publish Docker image
 on: [push]
