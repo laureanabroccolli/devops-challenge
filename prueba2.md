@@ -10,6 +10,7 @@ Y el ultimo error que tuve, que mas que un error fue un aviso, fue con respecto 
 ![image](https://user-images.githubusercontent.com/100167774/213609543-b6abc2b9-5fff-4599-9cbd-7420cc14616f.png)
 
 Y por ultimo, luego de agregar el los archivos Dockerfile, el archivo Docker-Compose.yml y de solucionar los errores presentados, con el comando Docker-Compose up pude ejecutar la app. 
+Ingresando al LocalHost desde mi navegador la pude visualizar.
 
 # DESPLIEGUE AWS (plus, a través de un botón)
 
