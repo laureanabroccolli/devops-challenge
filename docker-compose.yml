@@ -3,13 +3,13 @@ version: '2.15.1'
 
 services:
   frontend: 
-    #  Indicamos el directorio donde se encuentra el Dockerfile
+    ## Indicar el directorio donde se encuentra el Dockerfile
     build:      
       context: ./frontend
       dockerfile: Dockerfile
     image: "reactjs-app-test-1"
     container_name: container-frontend
-    # Establecemos los puertos que expondremos al exterior a que puerto de nuestra maquina se vinculara 
+    ##Establecer los puertos que expondremos al exterior a que puerto de nuestra maquina se vinculara 
     ports:
       - "80:3000"
     networks:
