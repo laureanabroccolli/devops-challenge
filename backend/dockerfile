@@ -10,12 +10,12 @@ COPY . .
 ##Crear secret key
 ENV SECRET_KEY lau1059
 
-##ejecuto este comando para ejecutar e instalar todos los paquetes
+##Ejecuto este comando para ejecutar e instalar todos los paquetes
 RUN pip3 install -r requirement.txt
 RUN pip3 install psycopg2
 RUN pip3 install psycopg2-binary
 
-##puerto para que corra la app  
+##Puerto para que corra la app  
 EXPOSE 8000  
 
 ##Ejecuto el comando final, agrego 0.0.0.0:8000 para que nuestra app este disponible externamente osea visible externamente fuera del contenedor
